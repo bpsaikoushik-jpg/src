@@ -1,4 +1,4 @@
-package BankingSystem.src.Exception;
+package Exception;
 
 public class NegativeAmountException extends Exception {
     public NegativeAmountException(String msg) {

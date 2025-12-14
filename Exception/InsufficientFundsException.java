@@ -1,4 +1,4 @@
-package BankingSystem.src.Exception;
+package Exception;
 
 public class InsufficientFundsException extends Exception {
     public InsufficientFundsException(String msg) {

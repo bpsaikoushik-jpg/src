@@ -1,8 +1,7 @@
-package BankingSystem.src.Main;
-
+package Main;
 
 import java.util.Scanner;
-import BankingSystem.src.LoanAccount;
+import Banking.LoanAccount;
 
 public class Main {
 
@@ -38,8 +37,9 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Final Amount: " +
-                        LoanAccount.calculateCompoundInterest(10000, 5, 2));
+                    System.out.println(
+                        LoanAccount.calculateCompoundInterest(10000, 5, 2)
+                    );
                     break;
 
                 case 5:
@@ -47,7 +47,11 @@ public class Main {
                     break;
 
                 case 6:
+                    System.out.println("Thank you!");
                     return;
+
+                default:
+                    System.out.println("Invalid choice");
             }
         }
     }
