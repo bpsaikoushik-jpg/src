@@ -17,8 +17,9 @@ public class Main {
             System.out.println("2. Withdraw");
             System.out.println("3. Transfer");
             System.out.println("4. Loan Calculation");
-            System.out.println("5. Save Output CSV");
-            System.out.println("6. Exit");
+          System.out.println("5. Save Output CSV");
+System.out.println("6. Generate PDF Statement");
+System.out.println("7. Exit");;
 
             int ch = sc.nextInt();
 
@@ -42,17 +43,19 @@ public class Main {
                     );
                     break;
 
-                case 5:
-                    menu.saveCSV();
-                    break;
+              case 5:
+    menu.saveCSV();
+    break;
 
-                case 6:
-                    System.out.println("Thank you!");
-                    return;
+case 6:
+    menu.generatePDF();
+    break;
 
-                default:
-                    System.out.println("Invalid choice");
+case 7:
+    System.out.println("Thank you!");
+    return;
             }
         }
     }
 }
+
