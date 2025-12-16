@@ -4,6 +4,7 @@ import java.util.*;
 import Banking.*;
 import Utility.CSVUtil;
 import Exception.*;
+import Utility.PDFUtil;
 
 public class Menu {
 
@@ -47,4 +48,8 @@ public class Menu {
         CSVUtil.writeOutput(accounts);
         System.out.println("Output CSV saved");
     }
+    public void generatePDF() {
+    PDFUtil.generatePDF(accounts);
 }
+}
+
